@@ -179,14 +179,14 @@ value 가 Truthy 한 값이기 때문에, 콘솔에 메시지가 출력 될 것�
 ```javascript
 const value = { a: 1 };
 
-const truthy = value ? true : false;
+const truthy = value.a ? true : false;
 ```
 
 우리가 이전에 배운 삼항연산자를 사용하면 쉽게 value 값의 존재 유무에 따라 쉽게 true 및 false 로 전환이 가능합니다. 그런데, 이를 더 쉽게 할 수도 있습니다.
 
 ```javascript
 const value = { a: 1 };
-const truthy = !!value;
+const truthy = !!value.a;
 ```
 
 !value 는 false 가 되고, 여기에 !false 는 true 가 되어서, 결과는 true 가 됩니다.
